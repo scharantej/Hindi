@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ lesson.title }}</title>
+</head>
+<body>
+<h1>{{ lesson.title }}</h1>
+<p>{{ lesson.content }}</p>
+<h2>Exercises</h2>
+<ul>
+{% for exercise in lesson.exercises %}
+<li><a href="/exercise/{{ exercise.id }}">{{ exercise.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
