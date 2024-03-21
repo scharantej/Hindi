@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ exercise.title }}</title>
+</head>
+<body>
+<h1>{{ exercise.title }}</h1>
+<p>{{ exercise.content }}</p>
+<form action="/submit_exercise" method="post">
+<input type="hidden" name="exercise_id" value="{{ exercise.id }}">
+<input type="text" name="answer">
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
